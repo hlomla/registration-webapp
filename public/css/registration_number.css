@@ -1,0 +1,153 @@
+body{
+    text-align: center;
+    background: linear-gradient(-200deg, #746f6b 30%, rgba(0, 0, 0, 0) 100%); 
+}
+
+.container{
+    height:500px;
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+    background: rgb(209, 0, 35);
+    border-radius: 30px;
+}
+
+.container{
+    filter: blur(0.6px);
+    box-shadow: 
+
+    -3px 15px 10px rgb(21, 20, 20),
+    0px 2.5px 5px  rgba(255, 255, 255),
+
+    25px 20px 10px rgb(21, 20, 20),
+
+    -10px 20px 30px rgba(255, 255, 255),
+
+    20px 20px 20px rgba(255, 255, 255);
+}
+
+h1{
+    margin-bottom: 3.5px;
+}
+.text-input{
+    margin-top: 5.5px;
+    margin-bottom: 5.5px;
+}
+.locations{
+    margin-top: 8.5px;
+    margin-bottom: 16px;
+}
+.buttons{
+    margin-bottom: -5.5px;
+    margin-top: 10.5px;
+}
+.regNo-output{
+    margin-top: 15px;
+    color: #090b0c;
+    border: 5px outset rgb(8, 7, 7);
+    text-transform: capitalize;
+   
+}
+.regErrs{
+    color: rgba(255, 255, 255, 0.981);
+    font-weight: bolder;
+}
+.btn{
+    margin: 5px;
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 1.5rem;
+    color: #090b0c;
+    background-color: rgb(255, 217, 3);
+    text-transform: capitalize;
+    border-radius: 12px;
+   
+}
+
+.btn2{
+    margin: 5px;
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 1.5rem;
+    color: #090b0c;
+    background-color: rgb(252, 251, 244);
+    text-transform: capitalize;
+    border-radius: 12px;
+   
+} 
+.btn3{
+    margin: 5px;
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 1.5rem;
+    color: #090b0c;
+    background-color: rgb(17, 130, 7);
+    text-transform: capitalize;
+    border-radius: 12px;
+}
+.btn4{
+    margin: 5px;
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 1.5rem;
+    color: #090b0c;
+    background-color: rgb(255, 217, 3);
+    text-transform: capitalize;
+    border-radius: 12px;
+}
+.Add{
+    background-color: rgb(144, 225, 243);
+    color: black;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 2px 1px;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-bottom: 3px;
+    margin-top: 8.5px;
+}
+.Clear{
+    background-color: rgb(144, 225, 243);
+    color: black;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 2px 1px;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-bottom: 3px;
+    margin-top: 8.5px;
+}
+.Show{
+    background-color: rgb(144, 225, 243);
+    color: black;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 2px 1px;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-bottom: 3px;
+    margin-top: 8.5px;
+}
+.Show-All{
+    background-color: rgb(144, 225, 243);
+    color: black;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 2px 1px;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-bottom: 3px;
+    margin-top: 8.5px;
+}
