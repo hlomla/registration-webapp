@@ -8,7 +8,7 @@ body{
     max-width: 600px;
     width: 100%;
     margin: auto;
-    background: rgb(209, 0, 35);
+    background: #746f6b;
     border-radius: 30px;
 }
 
@@ -42,25 +42,38 @@ h1{
     margin-top: 10.5px;
 }
 .regNo-output{
-    margin-top: 15px;
-    color: #090b0c;
-    border: 5px outset rgb(8, 7, 7);
+    margin-top: 15px; 
+    /* color: #090b0c;
+    border: 5px outset rgb(8, 7, 7); */
     text-transform: capitalize;
    
 }
-.regErrs{
-    color: rgba(255, 255, 255, 0.981);
-    font-weight: bolder;
+.errors {
+    color: red;
+    margin-bottom: 10px;
+}
+.success {
+    color: green;
+    margin-bottom: 10px;
+}
+.database {
+    color: green;
+    margin-bottom: 10px;
 }
 .btn{
-    margin: 5px;
+    list-style-type: none;
+    float: left;
     border: 2px solid black;
     padding: 10px;
-    font-size: 1.5rem;
+    font-size: 1.5 rem;
     color: #090b0c;
     background-color: rgb(255, 217, 3);
     text-transform: capitalize;
     border-radius: 12px;
+    margin-right: 30px;
+    text-align: center;
+    width: 80px;
+    line-height: 30px;
    
 }
 

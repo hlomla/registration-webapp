@@ -6,35 +6,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/registration_number.css">
-    <title>Regristration Number</title>
+    <title>Regristration Web App</title>
 </head>
 
 <body>
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1>Regristration Numbers</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="regErrs">
-                <div class="col-12">
-                    <h2>
-
-                    </h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <form action="/" method="POST">
-                  <div class="col-12">
-                <label for="name">Regristration Number : </label>
-                <input type="text" id="name" name="name" class="text-input" value=" "><br>
+                <h1>Regristration App</h1>
             </div>
         </div>
         <div class="row">
             <div class="col-12">
-                <button class="Add">Add</button>
+                <div class="errors">
+
+                    <h3 class="error">{{messages.error}}</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-12 success">
+                <div class="success">
+
+                    <h3 class="success">{{messages.success}}</h3>
+                </div>
+
+            </div>
+
+            <div class="col-12 database">
+                <div class="database">
+
+                    <h3 class="database">{{messages.key}}</h3>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="row">
+            <form action="/reg_numbers" method="POST">
+                <div class="col-12">
+                    <label for="name">Regristration Number : </label>
+                    <input type="text" id="name" name="theRegs" class="text-input" value=" "><br>
+                </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button type="submit" class="Add">Add</button>
+                </form>
                 <button class="Clear">Clear</button>
                 <button class="Show">Show</button>
                 <button class="Show-All">Show All</button>
@@ -59,13 +81,15 @@
         <div class="row">
             <div class="col-12">
                 <ul class="regNo-output" text-align="center">
-
+                    {{#each output}}
+                    <li class="btn">{{this.thereg}}</li>
+                    {{/each}}
                 </ul>
             </div>
         </div>
-            </form>
-      
-        
+
+
+
     </div>
 
 </body>

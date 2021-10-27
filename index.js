@@ -1,7 +1,7 @@
 let express = require('express')
 const exphbs = require('express-handlebars');
 const bodyParser = require('body-parser');
-// const connectFlash = require('connect-flash');
+const connectFlash = require('connect-flash');
 const flash = require('express-flash');
 const session = require('express-session');
 const registration = require('./registration-FF')
@@ -15,7 +15,7 @@ if (process.env.DATABASE_URL && !local){
     useSSL = true;
 } 
 
-const connectionString = process.env.DATABASE_URL || 'postgresql://codex:codex123@localhost:1238/db_registration';
+const connectionString = process.env.DATABASE_URL || 'postgresql://codex:codex123@localhost:5432/regDB';
 
 const pool = new Pool({
     connectionString,
@@ -53,9 +53,11 @@ app.use(express.static('public'));
 
 app.get('/', regRoutes.home)
 
-app.post('/', regRoutes.home)
+app.post('/reg_numbers', regRoutes.reg_numbers)
 
-let PORT = process.env.PORT || 3775;
+app.post('/resetBtn', regRoutes.reset)
+
+let PORT = process.env.PORT || 7777;
 
 app.listen(PORT, function () {
     console.log("App started at PORT: ", PORT);
