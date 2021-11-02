@@ -4,7 +4,8 @@ module.exports = function RegNo(pool) {
         const storeID = registration.trim().toUpperCase(2).substring(0, 2);
         console.log(storeID.length);
         try {
-                            await pool.query(`insert into registration(theReg,id_town) values($1,$2)`, [registration, storeID])            
+                            await pool.query(`insert into registration(thereg,id_town) values($1,$2)`, [registration, storeID]);
+        //                     await pool.query('Update registration SET thereg=thereg+1 where  thereg=$1', [registration])            
         } catch (error) {
             console.error('insertReg fun ==>', error)
         }
